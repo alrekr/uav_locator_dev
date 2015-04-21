@@ -1,7 +1,8 @@
 # uav_locator
 For locating a UAV.
 
-Usage:
+## Usage
+
 1.  Place uav_locator.hpp and uav_locator.cpp in the same folder. Place a sample
     image in the same folder, name it sample.png. This sample image *must* be a
     black profile image of the UAV to identify with a white background.
