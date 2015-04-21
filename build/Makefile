@@ -42,10 +42,10 @@ RM = /opt/cmake-3.2.1-Linux-x86_64/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alrekr/git/uav_locator
+CMAKE_SOURCE_DIR = /home/alrekr/git/uav_locator_dev
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alrekr/git/uav_locator/build
+CMAKE_BINARY_DIR = /home/alrekr/git/uav_locator_dev/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -123,9 +123,9 @@ install/local/fast: install/local
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator/build/CMakeFiles /home/alrekr/git/uav_locator/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator_dev/build/CMakeFiles /home/alrekr/git/uav_locator_dev/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator_dev/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

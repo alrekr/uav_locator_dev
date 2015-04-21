@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/alrekr/git/uav_locator/main.cpp" "/home/alrekr/git/uav_locator/build/CMakeFiles/uav_locator.dir/main.cpp.o"
-  "/home/alrekr/git/uav_locator/uav_locator.cpp" "/home/alrekr/git/uav_locator/build/CMakeFiles/uav_locator.dir/uav_locator.cpp.o"
+  "/home/alrekr/git/uav_locator_dev/main.cpp" "/home/alrekr/git/uav_locator_dev/build/CMakeFiles/uav_locator.dir/main.cpp.o"
+  "/home/alrekr/git/uav_locator_dev/uav_locator.cpp" "/home/alrekr/git/uav_locator_dev/build/CMakeFiles/uav_locator.dir/uav_locator.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

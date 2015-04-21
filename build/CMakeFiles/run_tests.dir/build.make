@@ -35,10 +35,10 @@ RM = /opt/cmake-3.2.1-Linux-x86_64/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alrekr/git/uav_locator
+CMAKE_SOURCE_DIR = /home/alrekr/git/uav_locator_dev
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alrekr/git/uav_locator/build
+CMAKE_BINARY_DIR = /home/alrekr/git/uav_locator_dev/build
 
 # Utility rule file for run_tests.
 
@@ -57,6 +57,6 @@ CMakeFiles/run_tests.dir/clean:
 .PHONY : CMakeFiles/run_tests.dir/clean
 
 CMakeFiles/run_tests.dir/depend:
-	cd /home/alrekr/git/uav_locator/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alrekr/git/uav_locator /home/alrekr/git/uav_locator /home/alrekr/git/uav_locator/build /home/alrekr/git/uav_locator/build /home/alrekr/git/uav_locator/build/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/alrekr/git/uav_locator_dev/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alrekr/git/uav_locator_dev /home/alrekr/git/uav_locator_dev /home/alrekr/git/uav_locator_dev/build /home/alrekr/git/uav_locator_dev/build /home/alrekr/git/uav_locator_dev/build/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/run_tests.dir/depend
 

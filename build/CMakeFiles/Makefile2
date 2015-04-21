@@ -47,10 +47,10 @@ RM = /opt/cmake-3.2.1-Linux-x86_64/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alrekr/git/uav_locator
+CMAKE_SOURCE_DIR = /home/alrekr/git/uav_locator_dev
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alrekr/git/uav_locator/build
+CMAKE_BINARY_DIR = /home/alrekr/git/uav_locator_dev/build
 
 #=============================================================================
 # Target rules for target CMakeFiles/clean_test_results.dir
@@ -59,15 +59,15 @@ CMAKE_BINARY_DIR = /home/alrekr/git/uav_locator/build
 CMakeFiles/clean_test_results.dir/all:
 	$(MAKE) -f CMakeFiles/clean_test_results.dir/build.make CMakeFiles/clean_test_results.dir/depend
 	$(MAKE) -f CMakeFiles/clean_test_results.dir/build.make CMakeFiles/clean_test_results.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alrekr/git/uav_locator/build/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/alrekr/git/uav_locator_dev/build/CMakeFiles 
 	@echo "Built target clean_test_results"
 .PHONY : CMakeFiles/clean_test_results.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/clean_test_results.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator_dev/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/clean_test_results.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator_dev/build/CMakeFiles 0
 .PHONY : CMakeFiles/clean_test_results.dir/rule
 
 # Convenience name for target.
@@ -90,15 +90,15 @@ clean: CMakeFiles/clean_test_results.dir/clean
 CMakeFiles/doxygen.dir/all:
 	$(MAKE) -f CMakeFiles/doxygen.dir/build.make CMakeFiles/doxygen.dir/depend
 	$(MAKE) -f CMakeFiles/doxygen.dir/build.make CMakeFiles/doxygen.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alrekr/git/uav_locator/build/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/alrekr/git/uav_locator_dev/build/CMakeFiles 
 	@echo "Built target doxygen"
 .PHONY : CMakeFiles/doxygen.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/doxygen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator_dev/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/doxygen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator_dev/build/CMakeFiles 0
 .PHONY : CMakeFiles/doxygen.dir/rule
 
 # Convenience name for target.
@@ -121,15 +121,15 @@ clean: CMakeFiles/doxygen.dir/clean
 CMakeFiles/roscpp_generate_messages_cpp.dir/all:
 	$(MAKE) -f CMakeFiles/roscpp_generate_messages_cpp.dir/build.make CMakeFiles/roscpp_generate_messages_cpp.dir/depend
 	$(MAKE) -f CMakeFiles/roscpp_generate_messages_cpp.dir/build.make CMakeFiles/roscpp_generate_messages_cpp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alrekr/git/uav_locator/build/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/alrekr/git/uav_locator_dev/build/CMakeFiles 
 	@echo "Built target roscpp_generate_messages_cpp"
 .PHONY : CMakeFiles/roscpp_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/roscpp_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator_dev/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/roscpp_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator_dev/build/CMakeFiles 0
 .PHONY : CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -152,15 +152,15 @@ clean: CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 CMakeFiles/roscpp_generate_messages_lisp.dir/all:
 	$(MAKE) -f CMakeFiles/roscpp_generate_messages_lisp.dir/build.make CMakeFiles/roscpp_generate_messages_lisp.dir/depend
 	$(MAKE) -f CMakeFiles/roscpp_generate_messages_lisp.dir/build.make CMakeFiles/roscpp_generate_messages_lisp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alrekr/git/uav_locator/build/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/alrekr/git/uav_locator_dev/build/CMakeFiles 
 	@echo "Built target roscpp_generate_messages_lisp"
 .PHONY : CMakeFiles/roscpp_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/roscpp_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator_dev/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/roscpp_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator_dev/build/CMakeFiles 0
 .PHONY : CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -183,15 +183,15 @@ clean: CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 CMakeFiles/roscpp_generate_messages_py.dir/all:
 	$(MAKE) -f CMakeFiles/roscpp_generate_messages_py.dir/build.make CMakeFiles/roscpp_generate_messages_py.dir/depend
 	$(MAKE) -f CMakeFiles/roscpp_generate_messages_py.dir/build.make CMakeFiles/roscpp_generate_messages_py.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alrekr/git/uav_locator/build/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/alrekr/git/uav_locator_dev/build/CMakeFiles 
 	@echo "Built target roscpp_generate_messages_py"
 .PHONY : CMakeFiles/roscpp_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/roscpp_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator_dev/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/roscpp_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator_dev/build/CMakeFiles 0
 .PHONY : CMakeFiles/roscpp_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -214,15 +214,15 @@ clean: CMakeFiles/roscpp_generate_messages_py.dir/clean
 CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all:
 	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend
 	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alrekr/git/uav_locator/build/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/alrekr/git/uav_locator_dev/build/CMakeFiles 
 	@echo "Built target rosgraph_msgs_generate_messages_cpp"
 .PHONY : CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator_dev/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator_dev/build/CMakeFiles 0
 .PHONY : CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -245,15 +245,15 @@ clean: CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
 CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all:
 	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend
 	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alrekr/git/uav_locator/build/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/alrekr/git/uav_locator_dev/build/CMakeFiles 
 	@echo "Built target rosgraph_msgs_generate_messages_lisp"
 .PHONY : CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator_dev/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator_dev/build/CMakeFiles 0
 .PHONY : CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -276,15 +276,15 @@ clean: CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
 CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all:
 	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
 	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alrekr/git/uav_locator/build/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/alrekr/git/uav_locator_dev/build/CMakeFiles 
 	@echo "Built target rosgraph_msgs_generate_messages_py"
 .PHONY : CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator_dev/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator_dev/build/CMakeFiles 0
 .PHONY : CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -307,15 +307,15 @@ clean: CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 CMakeFiles/run_tests.dir/all:
 	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/depend
 	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alrekr/git/uav_locator/build/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/alrekr/git/uav_locator_dev/build/CMakeFiles 
 	@echo "Built target run_tests"
 .PHONY : CMakeFiles/run_tests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/run_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator_dev/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/run_tests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator_dev/build/CMakeFiles 0
 .PHONY : CMakeFiles/run_tests.dir/rule
 
 # Convenience name for target.
@@ -338,15 +338,15 @@ clean: CMakeFiles/run_tests.dir/clean
 CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
 	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
 	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alrekr/git/uav_locator/build/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/alrekr/git/uav_locator_dev/build/CMakeFiles 
 	@echo "Built target std_msgs_generate_messages_cpp"
 .PHONY : CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator_dev/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator_dev/build/CMakeFiles 0
 .PHONY : CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -369,15 +369,15 @@ clean: CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
 	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
 	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alrekr/git/uav_locator/build/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/alrekr/git/uav_locator_dev/build/CMakeFiles 
 	@echo "Built target std_msgs_generate_messages_lisp"
 .PHONY : CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator_dev/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator_dev/build/CMakeFiles 0
 .PHONY : CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -400,15 +400,15 @@ clean: CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
 CMakeFiles/std_msgs_generate_messages_py.dir/all:
 	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_py.dir/build.make CMakeFiles/std_msgs_generate_messages_py.dir/depend
 	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_py.dir/build.make CMakeFiles/std_msgs_generate_messages_py.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alrekr/git/uav_locator/build/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/alrekr/git/uav_locator_dev/build/CMakeFiles 
 	@echo "Built target std_msgs_generate_messages_py"
 .PHONY : CMakeFiles/std_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/std_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator_dev/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/std_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator_dev/build/CMakeFiles 0
 .PHONY : CMakeFiles/std_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -431,15 +431,15 @@ clean: CMakeFiles/std_msgs_generate_messages_py.dir/clean
 CMakeFiles/tests.dir/all:
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/depend
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alrekr/git/uav_locator/build/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/alrekr/git/uav_locator_dev/build/CMakeFiles 
 	@echo "Built target tests"
 .PHONY : CMakeFiles/tests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator_dev/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator_dev/build/CMakeFiles 0
 .PHONY : CMakeFiles/tests.dir/rule
 
 # Convenience name for target.
@@ -462,7 +462,7 @@ clean: CMakeFiles/tests.dir/clean
 CMakeFiles/uav_locator.dir/all:
 	$(MAKE) -f CMakeFiles/uav_locator.dir/build.make CMakeFiles/uav_locator.dir/depend
 	$(MAKE) -f CMakeFiles/uav_locator.dir/build.make CMakeFiles/uav_locator.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alrekr/git/uav_locator/build/CMakeFiles  3 4
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/alrekr/git/uav_locator_dev/build/CMakeFiles  3 4
 	@echo "Built target uav_locator"
 .PHONY : CMakeFiles/uav_locator.dir/all
 
@@ -472,9 +472,9 @@ all: CMakeFiles/uav_locator.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/uav_locator.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator_dev/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/uav_locator.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator_dev/build/CMakeFiles 0
 .PHONY : CMakeFiles/uav_locator.dir/rule
 
 # Convenience name for target.
@@ -513,15 +513,15 @@ gtest/preinstall:
 gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alrekr/git/uav_locator/build/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/alrekr/git/uav_locator_dev/build/CMakeFiles  1
 	@echo "Built target gtest"
 .PHONY : gtest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
 gtest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator_dev/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 gtest/CMakeFiles/gtest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator_dev/build/CMakeFiles 0
 .PHONY : gtest/CMakeFiles/gtest.dir/rule
 
 # Convenience name for target.
@@ -544,15 +544,15 @@ clean: gtest/CMakeFiles/gtest.dir/clean
 gtest/CMakeFiles/gtest_main.dir/all: gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alrekr/git/uav_locator/build/CMakeFiles  2
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/alrekr/git/uav_locator_dev/build/CMakeFiles  2
 	@echo "Built target gtest_main"
 .PHONY : gtest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
 gtest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator_dev/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 gtest/CMakeFiles/gtest_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/uav_locator_dev/build/CMakeFiles 0
 .PHONY : gtest/CMakeFiles/gtest_main.dir/rule
 
 # Convenience name for target.

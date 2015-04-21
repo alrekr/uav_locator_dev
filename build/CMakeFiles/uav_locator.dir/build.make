@@ -35,10 +35,10 @@ RM = /opt/cmake-3.2.1-Linux-x86_64/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alrekr/git/uav_locator
+CMAKE_SOURCE_DIR = /home/alrekr/git/uav_locator_dev
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alrekr/git/uav_locator/build
+CMAKE_BINARY_DIR = /home/alrekr/git/uav_locator_dev/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/uav_locator.dir/depend.make
@@ -51,17 +51,17 @@ include CMakeFiles/uav_locator.dir/flags.make
 
 CMakeFiles/uav_locator.dir/main.cpp.o: CMakeFiles/uav_locator.dir/flags.make
 CMakeFiles/uav_locator.dir/main.cpp.o: ../main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alrekr/git/uav_locator/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/alrekr/git/uav_locator_dev/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/uav_locator.dir/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/uav_locator.dir/main.cpp.o -c /home/alrekr/git/uav_locator/main.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/uav_locator.dir/main.cpp.o -c /home/alrekr/git/uav_locator_dev/main.cpp
 
 CMakeFiles/uav_locator.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/uav_locator.dir/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/alrekr/git/uav_locator/main.cpp > CMakeFiles/uav_locator.dir/main.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/alrekr/git/uav_locator_dev/main.cpp > CMakeFiles/uav_locator.dir/main.cpp.i
 
 CMakeFiles/uav_locator.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/uav_locator.dir/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/alrekr/git/uav_locator/main.cpp -o CMakeFiles/uav_locator.dir/main.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/alrekr/git/uav_locator_dev/main.cpp -o CMakeFiles/uav_locator.dir/main.cpp.s
 
 CMakeFiles/uav_locator.dir/main.cpp.o.requires:
 .PHONY : CMakeFiles/uav_locator.dir/main.cpp.o.requires
@@ -74,17 +74,17 @@ CMakeFiles/uav_locator.dir/main.cpp.o.provides.build: CMakeFiles/uav_locator.dir
 
 CMakeFiles/uav_locator.dir/uav_locator.cpp.o: CMakeFiles/uav_locator.dir/flags.make
 CMakeFiles/uav_locator.dir/uav_locator.cpp.o: ../uav_locator.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alrekr/git/uav_locator/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/alrekr/git/uav_locator_dev/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/uav_locator.dir/uav_locator.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/uav_locator.dir/uav_locator.cpp.o -c /home/alrekr/git/uav_locator/uav_locator.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/uav_locator.dir/uav_locator.cpp.o -c /home/alrekr/git/uav_locator_dev/uav_locator.cpp
 
 CMakeFiles/uav_locator.dir/uav_locator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/uav_locator.dir/uav_locator.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/alrekr/git/uav_locator/uav_locator.cpp > CMakeFiles/uav_locator.dir/uav_locator.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/alrekr/git/uav_locator_dev/uav_locator.cpp > CMakeFiles/uav_locator.dir/uav_locator.cpp.i
 
 CMakeFiles/uav_locator.dir/uav_locator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/uav_locator.dir/uav_locator.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/alrekr/git/uav_locator/uav_locator.cpp -o CMakeFiles/uav_locator.dir/uav_locator.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/alrekr/git/uav_locator_dev/uav_locator.cpp -o CMakeFiles/uav_locator.dir/uav_locator.cpp.s
 
 CMakeFiles/uav_locator.dir/uav_locator.cpp.o.requires:
 .PHONY : CMakeFiles/uav_locator.dir/uav_locator.cpp.o.requires
@@ -159,6 +159,6 @@ CMakeFiles/uav_locator.dir/clean:
 .PHONY : CMakeFiles/uav_locator.dir/clean
 
 CMakeFiles/uav_locator.dir/depend:
-	cd /home/alrekr/git/uav_locator/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alrekr/git/uav_locator /home/alrekr/git/uav_locator /home/alrekr/git/uav_locator/build /home/alrekr/git/uav_locator/build /home/alrekr/git/uav_locator/build/CMakeFiles/uav_locator.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/alrekr/git/uav_locator_dev/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alrekr/git/uav_locator_dev /home/alrekr/git/uav_locator_dev /home/alrekr/git/uav_locator_dev/build /home/alrekr/git/uav_locator_dev/build /home/alrekr/git/uav_locator_dev/build/CMakeFiles/uav_locator.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uav_locator.dir/depend
 
