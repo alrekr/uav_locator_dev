@@ -16,3 +16,4 @@ For locating a UAV.
     a custom struct, p3d, containing contour mass center x and y coordinates,
     angle in radians (-pi to pi), and (if implemented by the user) the
     approximate size.
+    Repeat "ad nauseam".
