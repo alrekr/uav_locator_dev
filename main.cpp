@@ -17,7 +17,7 @@ extern p3d p;
 extern bool set_up_complete;
 
 int main(void) {
-	init_locate_uav();
+	//init_locate_uav();
 	Mat src = imread("sample.png", CV_LOAD_IMAGE_GRAYSCALE);
 	p3d p = locate_uav(src);
 	cout << "\ncen_x:  " << p.cen_x << "\ncen_y:  " << p.cen_y << "\ntheta:  "
