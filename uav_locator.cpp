@@ -30,16 +30,17 @@ double lowest = INT_MAX, match;
 vector<double> matches;
 Point3d _p;
 bool set_up_complete = false;
+height_point _hp;
 
-Point3d locate_uav(Mat _in) {
+height_point locate_uav(Mat _in) {
 
     if (set_up_complete == false) {
         init_locate_uav();
     }
 
-    _p.x = 0;
-    _p.y = 0;
-    _p.z = 4;
+    _hp.x = 0;
+    _hp.y = 0;
+    _hp.orientation = 4;
     received = get_shapes(_in);
 
     for (i = 0; i < static_cast<int>(received.size()); i++) {
@@ -57,12 +58,12 @@ Point3d locate_uav(Mat _in) {
     }
 
     if (lowest != INT_MAX) {
-        get_orientation(received, best_match, _p);
+        get_orientation(received, best_match, _hp);
     }
 
     matches.clear();
     received.clear();
-    return _p;
+    return _hp;
 }
 
 /*****************************************************************************
@@ -136,11 +137,31 @@ vector<vector<Point> > get_shapes(Mat _src) {
  *         Address to object of type Point3d to hold information about contour
  * Output: None
  *****************************************************************************/
-void get_orientation(vector<vector<Point> > _contours, int _n, Point3d &_p) {
+void get_orientation(vector<vector<Point> > _contours, int _n, height_point &_hp1) {
     Moments _m = moments(_contours[_n], false);
-    _p.x = _m.m10/_m.m00;
-    _p.y = _m.m01/_m.m00;
-    _p.z = 0.5 * atan2(((-2) * _m.mu11), (_m.mu20 - _m.mu02));
+    _hp1.x = _m.m10/_m.m00;
+    _hp1.y = _m.m01/_m.m00;
+    _hp1.orientation = 0.5 * atan2(((-2) * _m.mu11), (_m.mu20 - _m.mu02));
+}
+
+/*****************************************************************************
+ * Calculates the biggest distance of the contour
+ * Input:  vector of vector of points
+           Which vector to use
+           Address to object of type height_point
+   Output: None
+ *****************************************************************************/
+void get_distance(vector<vector<Point> > _contours, int _n, height_point &_hp1) {
+    double max_dist = -1;
+}
+
+/*****************************************************************************
+ * Calculates the distance between two points.
+ * Input:  Two points
+ * Output: The distance between the two points
+ *****************************************************************************/
+double calc_dist(Point p1, Point p2) {
+    return sqrt((p2.x-p1.x)*(p2.x-p1.x)+(p2.y-p1.y)*(p2.y-p1.y));
 }
 
 /*****************************************************************************

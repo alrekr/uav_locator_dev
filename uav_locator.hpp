@@ -8,13 +8,21 @@ using cv::Point3d;
 using cv::Point;
 using std::vector;
 
-Point3d locate_uav(Mat);
+typedef struct height_point {
+    double x;
+    double y;
+    double orientation;
+    double distance;
+} height_point;
+
+height_point locate_uav(Mat);
 void init_locate_uav(void);
 void prepare_mat(Mat&);
 void erode_dilate(Mat&);
 vector<vector<Point> > get_shapes(Mat);
-void get_orientation(vector<vector<Point> >, int, Point3d&);
-void get_center(vector<vector<Point> >, int, Point3d&);
+void get_orientation(vector<vector<Point> >, int, height_point&);
+void get_distance(vector<vector<Point> >, int, height_point&);
+double calc_dist(Point, Point);
 double rtod(double r);
 double dtor(double d);
 
