@@ -16,24 +16,23 @@ using std::endl;
 using std::list;
 using std::vector;
 using cv::Point;
-using cv::Point3d;
+using cv::Point2f;
 using cv::Mat;
 using cv::imread;
 using cv::Size;
 using cv::MORPH_ELLIPSE;
 using cv::Vec4i;
 using cv::Moments;
+using cv::RotatedRect;
 
 int i, best_match;
 vector<vector<Point> > original, received;
 double lowest = INT_MAX, match;
 vector<double> matches;
-Point3d _p;
 bool set_up_complete = false;
 height_point _hp;
 
 height_point locate_uav(Mat _in) {
-
     if (set_up_complete == false) {
         init_locate_uav();
     }
@@ -59,6 +58,7 @@ height_point locate_uav(Mat _in) {
 
     if (lowest != INT_MAX) {
         get_orientation(received, best_match, _hp);
+        get_distance(received, best_match, _hp);
     }
 
     matches.clear();
@@ -134,7 +134,7 @@ vector<vector<Point> > get_shapes(Mat _src) {
  * http://stackoverflow.com/questions/14720722/binary-image-orientation
  * Input:  Found contours
  *         which contour matches with the original sample
- *         Address to object of type Point3d to hold information about contour
+ *         Address to object of type height_point to hold information about contour
  * Output: None
  *****************************************************************************/
 void get_orientation(vector<vector<Point> > _contours, int _n, height_point &_hp1) {
@@ -146,13 +146,29 @@ void get_orientation(vector<vector<Point> > _contours, int _n, height_point &_hp
 
 /*****************************************************************************
  * Calculates the biggest distance of the contour
- * Input:  vector of vector of points
+ * Input:  vector of vector of points (contour)
            Which vector to use
            Address to object of type height_point
    Output: None
  *****************************************************************************/
-void get_distance(vector<vector<Point> > _contours, int _n, height_point &_hp1) {
-    double max_dist = -1;
+void get_distance(vector<vector<Point> > _contours, int _n, height_point &_p) {
+    double max_dist = -1, temp_dist;
+    RotatedRect min_rect;
+    Point2f points[4];
+
+    min_rect = minAreaRect(Mat(_contours[_n]));
+    min_rect.points(points);
+
+    for (int j = 0; j < 4; j++) {
+        for (int k = j; k < 4; k++) {
+            temp_dist = calc_dist(points[j], points[k]);
+            if (temp_dist > max_dist) {
+                max_dist = temp_dist;
+            }
+        }
+    }
+
+    _p.distance = max_dist;
 }
 
 /*****************************************************************************
