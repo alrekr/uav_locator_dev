@@ -19,21 +19,6 @@ int main(void) {
             << p.orientation << "\nDegree:   " << rtod(p.orientation)
             << "\nDistance: " << p.distance << endl;
 
-    Point p1, p2;
-    cout << "Testing some ... stuff" << endl;
-    cout << "X1: ";
-    cin >> p1.x;
-    cout << "Y1: ";
-    cin >> p1.y;
-    cout << "X2: ";
-    cin >> p2.x;
-    cout << "Y2: ";
-    cin >> p2.y;
-
-    double dist = calc_dist(p1, p2);
-
-    cout << "Distance between " << p1 << " and " << p2 << " is " << dist << endl;
-
     cout << "Program is done." << endl;
 
     return 0;
