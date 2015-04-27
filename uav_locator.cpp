@@ -25,29 +25,31 @@ using cv::Vec4i;
 using cv::Moments;
 using cv::RotatedRect;
 
-int i, best_match;
+
 vector<vector<Point> > original, received;
-double lowest = INT_MAX, match;
-vector<double> matches;
+
 bool set_up_complete = false;
-height_point _hp;
 
 height_point locate_uav(Mat _in) {
     if (set_up_complete == false) {
         init_locate_uav();
     }
+    height_point _hp;
+    double lowest = INT_MAX, match;
+    vector<double> matches;
+    int best_match;
 
     _hp.x = 0;
     _hp.y = 0;
     _hp.orientation = 4;
     received = get_shapes(_in);
 
-    for (i = 0; i < static_cast<int>(received.size()); i++) {
+    for (int i = 0; i < static_cast<int>(received.size()); i++) {
         matches.push_back(matchShapes(original[ORIGINAL_SHAPE], received[i],
             CV_CONTOURS_MATCH_I1, 0));
     }
 
-    for (i = 0; i < static_cast<int>(matches.size()); i++) {
+    for (int i = 0; i < static_cast<int>(matches.size()); i++) {
         match = matches[i];
 
         if (lowest > match && match < MATCH_SHAPE_THRESHOLD) {
